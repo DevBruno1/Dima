@@ -62,17 +62,12 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
 
             context.Categories.Remove(category);
             await context.SaveChangesAsync();
-            return new Response<Category?>(category, 200,"Categoria deletada com sucesso");
+            return new Response<Category?>(category, 200, "Categoria deletada com sucesso");
         }
         catch
         {
             return new Response<Category?>(null, 500, "Nao foi possivel excluir a categoria");
         }
-    }
-
-    public Task<Response<List<Category>>> GetAllAsync(GetAllCategoriesRequest request)
-    {
-        throw new NotImplementedException();
     }
 
     public async Task<Response<Category?>> GetByIdAsync(GetCategoryByIdRequest request)
@@ -89,6 +84,25 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
         catch
         {
             return new Response<Category?>(null, 500, "Nao foi possivel encontrar a categoria");
+        }
+    }
+
+    public async Task<PagedResponse<List<Category>>> GetAllAsync(GetAllCategoriesRequest request)
+    {
+        try
+        {
+            var query = context.Categories.AsNoTracking().Where(x => x.UserId == request.UserId);
+
+            var categories = await query.Skip(request.PageSize * request.PageNumber).Take(request.PageSize)
+                .ToListAsync();
+
+            var count = await query.CountAsync();
+
+            return new PagedResponse<List<Category>>(categories, count, request.PageNumber, request.PageSize);
+        }
+        catch
+        {
+            return new PagedResponse<List<Category>>(null, 500, "Nao foi possivel consultar as categorias");
         }
     }
 }
