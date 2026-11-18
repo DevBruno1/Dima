@@ -26,6 +26,6 @@ public class DeleteCategoryEndpoint : IEndpoint
         var result = await handler.DeleteAsync(request);
         return result.IsSuccess
             ? TypedResults.Ok(result)
-            : TypedResults.BadRequest(result.Data);
+            : TypedResults.BadRequest(result);
     }
 }
