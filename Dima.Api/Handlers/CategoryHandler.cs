@@ -45,7 +45,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
             await context.SaveChangesAsync();
             return new Response<Category?>(category);
         }
-        catch (Exception ex)
+        catch
         {
             return new Response<Category?>(null, 500, "Nao foi possivel atualizar a categoria");
         }
