@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fkD/4lGf6qg=",
+  "dgSpecHash": "FOsc4cHiPOk=",
   "success": true,
   "projectFilePath": "C:\\dev\\cursos\\balta\\backend\\projetos\\Dima\\Dima.Api\\Dima.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brbba\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\brbba\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
     "C:\\Users\\brbba\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\brbba\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.15\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.15.nupkg.sha512",
     "C:\\Users\\brbba\\.nuget\\packages\\microsoft.aspnetcore.openapi\\11.0.0\\microsoft.aspnetcore.openapi.11.0.0.nupkg.sha512",
     "C:\\Users\\brbba\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\brbba\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
