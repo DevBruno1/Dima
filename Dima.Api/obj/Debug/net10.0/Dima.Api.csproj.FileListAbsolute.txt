@@ -9,6 +9,7 @@ C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Dima.Api.pd
 C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Azure.Core.dll
 C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Azure.Identity.dll
 C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Humanizer.dll
+C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Microsoft.Build.Framework.dll
 C:\dev\cursos\balta\backend\projetos\Dima\Dima.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
